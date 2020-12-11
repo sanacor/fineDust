@@ -12,6 +12,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     let locationManager = CLLocationManager()
 
 
+    @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var imageT: UIImageView!
     
     override func viewDidLoad() {
