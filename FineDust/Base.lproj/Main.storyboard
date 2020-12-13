@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gb1-xZ-g6E">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="ipad11_0rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,16 +13,16 @@
             <objects>
                 <tableViewController id="oQw-fD-Nga" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="EXB-Wq-674">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="UjH-uO-8jz">
-                                <rect key="frame" x="0.0" y="28" width="428" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="28" width="834" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="UjH-uO-8jz" id="iPp-3H-ny5">
-                                    <rect key="frame" x="0.0" y="0.0" width="428" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="834" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -64,7 +64,7 @@
             <objects>
                 <viewController id="VJb-PZ-5H8" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="evV-za-BC5">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Nnd-BJ-Hse"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -80,49 +80,43 @@
             <objects>
                 <viewController id="cJS-gm-RTk" customClass="ViewController" customModule="FineDust" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lj8-aS-iqR">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="53v-dm-7Pe">
-                                <rect key="frame" x="0.0" y="132" width="428" height="180"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="현재 위치" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gp6-RJ-Qd5">
-                                        <rect key="frame" x="168" y="8" width="92" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
-                                        <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="경기도 부천시 중동" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubT-9Y-XPP">
-                                        <rect key="frame" x="0.0" y="61" width="414" height="58"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
-                                        <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstItem="gp6-RJ-Qd5" firstAttribute="centerX" secondItem="53v-dm-7Pe" secondAttribute="centerX" id="5KV-uv-l7W"/>
-                                    <constraint firstAttribute="height" constant="180" id="YBM-SD-OOd"/>
-                                    <constraint firstItem="gp6-RJ-Qd5" firstAttribute="top" secondItem="53v-dm-7Pe" secondAttribute="top" constant="8" id="ZPJ-JZ-74W"/>
-                                </constraints>
-                            </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nfs-bc-ZcN">
-                                <rect key="frame" x="0.0" y="360" width="428" height="292"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="292" id="Lag-op-f7L"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nfs-bc-ZcN">
+                                <rect key="frame" x="0.0" y="360" width="414" height="374"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ToF-Ia-Cxm" userLabel="TopDummyView">
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="179"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="현재 위치" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gp6-RJ-Qd5">
+                                <rect key="frame" x="0.0" y="186.5" width="834" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="경기도 부천시 중동" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubT-9Y-XPP">
+                                <rect key="frame" x="15" y="254.5" width="767.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uI3-eY-bL1"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Nfs-bc-ZcN" firstAttribute="top" secondItem="53v-dm-7Pe" secondAttribute="bottom" constant="48" id="7P7-Pf-gxZ"/>
-                            <constraint firstItem="53v-dm-7Pe" firstAttribute="trailing" secondItem="uI3-eY-bL1" secondAttribute="trailing" id="DK6-6o-84F"/>
-                            <constraint firstItem="Nfs-bc-ZcN" firstAttribute="trailing" secondItem="uI3-eY-bL1" secondAttribute="trailing" id="KY9-3h-k6j"/>
-                            <constraint firstItem="53v-dm-7Pe" firstAttribute="top" secondItem="uI3-eY-bL1" secondAttribute="top" constant="88" id="T3K-k5-JRs"/>
-                            <constraint firstItem="53v-dm-7Pe" firstAttribute="leading" secondItem="uI3-eY-bL1" secondAttribute="leading" id="bJM-2K-wdR"/>
-                            <constraint firstItem="Nfs-bc-ZcN" firstAttribute="leading" secondItem="uI3-eY-bL1" secondAttribute="leading" id="fZy-83-n3e"/>
+                            <constraint firstItem="gp6-RJ-Qd5" firstAttribute="top" secondItem="ToF-Ia-Cxm" secondAttribute="bottom" constant="7.3333333333333144" id="2iA-w5-aOO"/>
+                            <constraint firstItem="ubT-9Y-XPP" firstAttribute="width" secondItem="lj8-aS-iqR" secondAttribute="width" multiplier="0.920513" id="3hg-yp-jNz"/>
+                            <constraint firstItem="ToF-Ia-Cxm" firstAttribute="height" secondItem="lj8-aS-iqR" secondAttribute="height" multiplier="0.15" id="7fi-Yb-87N"/>
+                            <constraint firstItem="ToF-Ia-Cxm" firstAttribute="width" secondItem="lj8-aS-iqR" secondAttribute="width" id="CTj-23-BvH"/>
+                            <constraint firstItem="ToF-Ia-Cxm" firstAttribute="leading" secondItem="uI3-eY-bL1" secondAttribute="leading" id="OgL-rh-Y8E"/>
+                            <constraint firstItem="gp6-RJ-Qd5" firstAttribute="leading" secondItem="uI3-eY-bL1" secondAttribute="leading" id="b7a-z8-xbz"/>
+                            <constraint firstItem="ubT-9Y-XPP" firstAttribute="leading" secondItem="uI3-eY-bL1" secondAttribute="leading" constant="15" id="cJX-1T-38H"/>
+                            <constraint firstItem="ubT-9Y-XPP" firstAttribute="top" secondItem="gp6-RJ-Qd5" secondAttribute="bottom" constant="38" id="dd9-hN-YCI"/>
+                            <constraint firstItem="ToF-Ia-Cxm" firstAttribute="top" secondItem="uI3-eY-bL1" secondAttribute="top" id="u05-Yf-tuX"/>
+                            <constraint firstItem="gp6-RJ-Qd5" firstAttribute="width" secondItem="lj8-aS-iqR" secondAttribute="width" id="xEf-Bz-pl4"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="미세먼지" id="h2P-en-9Vl"/>
@@ -133,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K1J-Qa-bDw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1200" y="-11.383928571428571"/>
+            <point key="canvasLocation" x="-1200.8" y="-12.143928035982009"/>
         </scene>
     </scenes>
     <resources>
